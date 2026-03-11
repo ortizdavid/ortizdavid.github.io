@@ -44,28 +44,70 @@
     <section class="py-20 bg-slate-900/50">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <h3 class="text-slate-500 uppercase tracking-widest text-sm font-bold mb-12">Core Technology Stack</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
                 <div class="tech-card">
-                    <i class="fab fa-golang text-5xl text-cyan-400 mb-4"></i>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" class="w-16 h-16 mx-auto mb-4" alt="Go">
                     <p class="font-bold">Go Specialist</p>
                 </div>
                 <div class="tech-card">
-                    <i class="fas fa-code text-5xl text-purple-500 mb-4"></i>
-                    <p class="font-bold">.NET Core</p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" class="w-16 h-16 mx-auto mb-4" alt=".NET Core">
+                    <p class="font-bold text-purple-400">.NET Core</p>
                 </div>
                 <div class="tech-card">
-                    <i class="fab fa-python text-5xl text-yellow-500 mb-4"></i>
-                    <p class="font-bold">Python</p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-16 h-16 mx-auto mb-4" alt="Python">
+                    <p class="font-bold text-yellow-500">Python</p>
                 </div>
                 <div class="tech-card">
-                    <i class="fas fa-microchip text-5xl text-blue-500 mb-4"></i>
-                    <p class="font-bold">Microservices</p>
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-project-diagram text-5xl text-blue-400"></i>
+                    </div>
+                    <p class="font-bold text-blue-400">Clean Arch / CQRS</p>
+                </div>
+            </div>
+
+            <h4 class="text-slate-600 uppercase tracking-tighter text-xs font-bold mb-8">Databases & Infrastructure</h4>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12 opacity-90">
+                
+                <div class="text-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-10 h-10 mx-auto mb-2 grayscale group-hover:grayscale-0 transition" title="PostgreSQL">
+                    <span class="text-[10px] text-slate-500 font-mono italic">Postgres</span>
+                </div>
+                <div class="text-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-10 h-10 mx-auto mb-2 grayscale group-hover:grayscale-0 transition" title="MySQL">
+                    <span class="text-[10px] text-slate-500 font-mono italic">MySQL</span>
+                </div>
+
+                <div class="text-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-10 h-10 mx-auto mb-2 grayscale group-hover:grayscale-0 transition" title="MongoDB">
+                    <span class="text-[10px] text-slate-500 font-mono italic">MongoDB</span>
+                </div>
+                <div class="text-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" class="w-10 h-10 mx-auto mb-2 grayscale group-hover:grayscale-0 transition" title="Redis">
+                    <span class="text-[10px] text-slate-500 font-mono italic">Redis</span>
+                </div>
+
+                <div class="text-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" class="w-10 h-10 mx-auto mb-2 grayscale group-hover:grayscale-0 transition" title="RabbitMQ">
+                    <span class="text-[10px] text-slate-500 font-mono italic">RabbitMQ</span>
+                </div>
+                <div class="text-center group">
+                    <div class="w-10 h-10 mx-auto mb-2 flex items-center justify-center grayscale group-hover:grayscale-0 transition bg-slate-800 rounded-lg p-1">
+                        <img src="https://min.io/resources/img/logo/minio-logo.svg" alt="MinIO">
+                    </div>
+                    <span class="text-[10px] text-slate-500 font-mono italic">MinIO</span>
+                </div>
+
+                <div class="text-center group border-l border-slate-800 pl-6">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-10 h-10 mx-auto mb-2 grayscale group-hover:grayscale-0 transition" title="Docker">
+                    <span class="text-[10px] text-cyan-500 font-mono font-bold uppercase tracking-widest">Docker</span>
                 </div>
             </div>
         </div>
     </section>
+    
 
- <section class="py-24 px-6 max-w-6xl mx-auto">
+    <section class="py-24 px-6 max-w-6xl mx-auto">
         <h3 class="text-3xl font-bold mb-16 text-center">Open Source & Public Projects</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             
@@ -162,7 +204,7 @@
                 <div class="flex flex-wrap gap-2">
                     <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-purple-300">.NET 10</span>
                     <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-purple-300">Entity Framework</span>
-                    <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-purple-300">SQL Server</span>
+                    <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-purple-300">PostgreSQL</span>
                 </div>
             </div>
 
