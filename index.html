@@ -210,15 +210,44 @@
                 </div>
             </div>
 
+            
             <div class="project-card border-l-4 border-l-cyan-500 md:col-span-2">
-                <h4 class="text-xl font-bold text-white mb-2">Enterprise Internal Templates (Micro & Modular)</h4>
-                <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                    Criação de blueprints proprietários para acelerar o desenvolvimento corporativo: <strong>go-enterprise-micro</strong> (focado em comunicação via gRPC e NATS) e <strong>go-enterprise-modular</strong> (monólitos modulares com separação rigorosa de domínios).
-                </p>
-                <div class="flex flex-wrap gap-2 text-xs">
-                    <span class="text-cyan-400 font-mono">#Scalability</span>
-                    <span class="text-cyan-400 font-mono">#Standards</span>
-                    <span class="text-cyan-400 font-mono">#BestPractices</span>
+                <div class="flex flex-col md:flex-row justify-between items-start mb-6">
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-2">Go Enterprise Microservice Framework</h4>
+                        <p class="text-cyan-400 font-mono text-sm">Industrial-Grade Chassis for High-Performance Distributed Systems</p>
+                    </div>
+                    <span class="badge-sec bg-cyan-900/30 text-cyan-400 border border-cyan-800">Proprietary Architecture</span>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-6">
+                    <div class="space-y-4">
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Um template de Backend proprietário desenhado para eliminar 80% do boilerplate em novos microserviços, garantindo conformidade arquitetural rigorosa com <strong>Clean Architecture</strong> e <strong>Lightweight CQRS</strong>.
+                        </p>
+                        <ul class="text-slate-500 text-xs space-y-2">
+                            <li><i class="fas fa-check text-cyan-500 mr-2"></i> <strong>Dual-Port Entry:</strong> Suporte nativo e simultâneo para REST (Fiber) e JSON-RPC.</li>
+                            <li><i class="fas fa-check text-cyan-500 mr-2"></i> <strong>Automated Scaffolding:</strong> Engine de geração de código para Domínios, DTOs e Repositories.</li>
+                            <li><i class="fas fa-check text-cyan-500 mr-2"></i> <strong>Database Mastery:</strong> Migrações declarativas com Atlas e leitura via SQL Views otimizadas.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-slate-950 p-4 rounded-lg border border-slate-800 font-mono text-[10px] text-slate-400">
+                        <p class="text-slate-600 mb-2">// Project Architecture Snapshot</p>
+                        ├── internal/core <span class="text-slate-600"># Handlers, Services, Repos (CQRS)</span><br>
+                        ├── internal/shared <span class="text-slate-600"># Base Handlers & Filter Engines</span><br>
+                        ├── pkg/ <span class="text-slate-600"># SDK: i18n, Storage, Security, Observability</span><br>
+                        ├── scaffold/ <span class="text-slate-600"># Tmpl-based Code Generation</span><br>
+                        └── database/ <span class="text-slate-600"># Atlas HCL & SQL Views Logic</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3">
+                    <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-cyan-300">Go 1.22+</span>
+                    <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-cyan-300">Redis & RabbitMQ</span>
+                    <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-cyan-300">PostgreSQL (Atlas)</span>
+                    <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-cyan-300">JSON-RPC 2.0</span>
+                    <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-cyan-300">UUIDv7</span>
                 </div>
             </div>
 
@@ -229,7 +258,7 @@
         <div class="max-w-4xl mx-auto px-6">
             <h3 class="text-3xl font-bold mb-12 text-center">Latest Technical Articles</h3>
             <div class="space-y-4">
-                
+
                 <a href="https://dev.to/ortizdavid/por-que-o-seu-microservico-deve-permitir-integracao-via-json-rpc-bfe" class="block project-card hover:border-blue-500 transition py-4">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-4">
@@ -272,7 +301,7 @@
 
                 <div class="text-center mt-8">
                     <a href="https://dev.to/ortizdavid" class="text-blue-400 hover:text-white transition font-bold text-sm uppercase tracking-widest">
-                        Ver todos os 105 posts &rarr;
+                        Ver todos os 105+ posts no Dev.to &rarr;
                     </a>
                 </div>
             </div>
